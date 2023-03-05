@@ -1,4 +1,15 @@
-<input type="text" name="name" id="name" [(ngModel)]="name">
-<p>{{ name }}</p>
-<button>Click me!</button>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h3>I'm in the AppComponent</h3>
+            <input type="text" name="name" id="name" [(ngModel)]="name">
+            <p>{{ name }}</p>
+            <button>Click me!</button>
+            <hr>
+            <app-servers></app-servers>
+            <!-- <div class="app-servers"></div> -->
+            <!-- <div app-servers></div> -->
+        </div>
+    </div>
+</div>
 
