@@ -7,6 +7,6 @@
     <li *ngFor="let log of logs; let i = index">
         <span [ngStyle]="{backgroundColor: i > 3 ? 'blue' : 'white'}"
               [ngClass]="{fifthFontColor: i > 3}"
-            >{{ log }}</span>
+            >{{ i + 1 }}: {{ log }}</span>
         </li>
 </ul>

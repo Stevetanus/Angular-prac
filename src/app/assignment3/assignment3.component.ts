@@ -7,16 +7,11 @@ import { Component } from '@angular/core';
 })
 export class Assignment3Component {
   showDetails = false;
-  logCounter:number = 0;
   logs: string[] = [];
 
   toggleShowDetails () {
     this.showDetails = !this.showDetails;
     this.logs.push(new Date().toString());
-    // ++this.logCounter;
-    this.logCounter++;
-    console.log(this.logs);
-    console.log(this.logCounter);
   }
 }
 
