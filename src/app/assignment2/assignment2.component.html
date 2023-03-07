@@ -1,7 +1,10 @@
 <h3>Username</h3>
-<input type="text"
-[(ngModel)]="userName"
-class="form-control"
->
+<input type="text" [(ngModel)]="userName" class="form-control" />
 <p>{{ userName }}</p>
-<button class="btn btn-primary" (click)="onCleanUserName()" [disabled]="userName === ''">reset</button>
+<button
+  class="btn btn-primary"
+  (click)="onCleanUserName()"
+  [disabled]="userName === ''"
+>
+  reset
+</button>
